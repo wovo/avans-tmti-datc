@@ -1,0 +1,22 @@
+#############################################################################
+#
+# makefile.due common settings for Arduino Due projects
+#
+# (c) Wouter van Ooijen (www.voti.nl) 2017
+#
+# This file is in the public domain.
+# 
+#############################################################################
+
+# settings for Arduino Due projects
+TARGET            ?= arduino_due
+CONSOLE_BAUDRATE  ?= 2400
+STACK_SIZE        ?= 81920
+HEAP              ?= BMPTK
+
+# add the rtos
+RTOS              ?= $(RELATIVE)/../rtos
+include           $(RTOS)/makefile.inc
+
+# defer to the Makefile.link
+include           $(RELATIVE)/Makefile.link

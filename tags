@@ -1,0 +1,6 @@
+sleep_ns	C:\Wouter\ti-software\avans-tmti-datc\threads-003-mutex\main.cpp	/^void sleep_ns( int n ){$/;"	function	line:7	signature:( int n )	returns:void 
+write	C:\Wouter\ti-software\avans-tmti-datc\threads-003-mutex\main.cpp	/^void write( char c ){$/;"	function	line:11	signature:( char c )	returns:void 
+cout_mutex	C:\Wouter\ti-software\avans-tmti-datc\threads-003-mutex\main.cpp	/^std::mutex cout_mutex;$/;"	variable	line:16
+write	C:\Wouter\ti-software\avans-tmti-datc\threads-003-mutex\main.cpp	/^void write( const char *s ){$/;"	function	line:18	signature:( const char *s )	returns:void 
+writer	C:\Wouter\ti-software\avans-tmti-datc\threads-003-mutex\main.cpp	/^void writer( const char *s, const int n ){$/;"	function	line:26	signature:( const char *s, const int n )	returns:void 
+main	C:\Wouter\ti-software\avans-tmti-datc\threads-003-mutex\main.cpp	/^int main(){$/;"	function	line:32	signature:()	returns:int 
