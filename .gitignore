@@ -1,6 +1,7 @@
 .clang
 .codelite/
 .codelite/*.*
+_run.bat
 _codelite.project
 _codelite.session
 __codelite.workspace
