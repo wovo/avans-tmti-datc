@@ -2,6 +2,9 @@
 .codelite/
 .codelite/*.*
 _run.bat
+_linker_libs
+_linker_flags
+_cpp_flags
 _codelite.project
 _codelite.session
 __codelite.workspace
