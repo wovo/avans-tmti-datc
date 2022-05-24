@@ -3,13 +3,15 @@
 #include <thread>
 #include <future>
 
-#define TRACE { std::cout << __FILE__ << ":" << __LINE__ << "\n"; }
+std::recursive_mutex cout_mutex;
+
+#define TRACE { \
+    std::scoped_lock use_cout_exclusively( cout_mutex ); \
+    std::cout << __FILE__ << ":" << __LINE__ << "\n"; }
 
 void sleep_ns( int n ){
     std::this_thread::sleep_for( std::chrono::nanoseconds( n ));
 }
-
-std::recursive_mutex cout_mutex;
 
 void f( int n ){
     for( int i = 0; i < 10; ++ i ){
